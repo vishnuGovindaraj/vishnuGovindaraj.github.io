@@ -6,7 +6,7 @@ body{
 }
 .container {
   position: relative;
-  width: 75%; 
+  width: 100%; 
   margin: 0 auto;
   padding: 0;
 }
@@ -55,7 +55,7 @@ ul.topnav li a:hover {background-color: #555;}
   }
 }
 #header{
-  width: 75%;
+  width: 100%;
   margin: 0;
   background-color: #373737;
   position: fixed;

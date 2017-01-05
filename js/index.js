@@ -1,4 +1,4 @@
-/*
+
 
 $("a[href$='ContactButton']").click(function() {
   $("html, body").animate({
@@ -28,8 +28,4 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
-}
-*/
-module.exports = function(width, height){
-  return width * height;
 };

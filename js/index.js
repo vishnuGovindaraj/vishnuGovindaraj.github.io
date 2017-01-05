@@ -1,3 +1,5 @@
+/*
+
 $("a[href$='ContactButton']").click(function() {
   $("html, body").animate({
     scrollTop: $("#Contact").offset().top - 150
@@ -27,3 +29,7 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+*/
+module.exports = function(width, height){
+  return width * height;
+};

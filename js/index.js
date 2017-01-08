@@ -2,20 +2,20 @@
 
 $("a[href$='ContactButton']").click(function() {
   $("html, body").animate({
-    scrollTop: $("#Contact").offset().top - 150
-  }, 1000);
+    scrollTop: $("#Contact").offset().top
+  }, 1200);
   return true;
 });
 $("a[href$='PortfolioButton']").click(function() {
   $("html, body").animate({
-    scrollTop: $("#Portfolio").offset().top - 150
-  }, 1000);
+    scrollTop: $("#Portfolio").offset().top
+  }, 1200);
   return true;
 });
 $("a[href$='AboutMeButton']").click(function() {
   $("html, body").animate({
-    scrollTop: $("#AboutMe").offset().top - 150
-  }, 1000);
+    scrollTop: $("#AboutMe").offset().top
+  }, 1200);
   return true;
 });
 

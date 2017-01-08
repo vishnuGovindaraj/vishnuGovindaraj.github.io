@@ -21,12 +21,9 @@
 <body>
   <div class="container">
   <!-- Top Menu -->
-  <div id="header" class="row">
-    <div class="col-xs-12">
-      <div class="col-xs-6">
-      <h1>
-      <a href="/otherpage.html" class="notunderlinelink">Vishnu Govindaraj test</a>
-        </div>
+    <div id="HeroImage" class="row">
+        <div class="col-xs-12">
+              <div class="col-xs-12">
       <ul class="topnav" id="myTopnav">
         <li><a href="#ContactButton">Contact</a></li>
         <li><a href="#PortfolioButton">Portfolio</a></li>
@@ -36,18 +33,25 @@
         </li>
       </ul>
       </div>
+    <div class="col-xs-12" id="HeroLogo">
+        <h1><a href="/index.php" class="notunderlinelink"><strong>Vishnu Govindaraj</strong></h1></a>
+    <h2 id="HeroHeading">
+    Innovate  .  Inspire  .  Educate
+      </h2>
   </div>
+    </div>
+    </div>
   <!-- About Me Section --> 
+  
   <div id="AboutMe" class="row">
     <div class="col-xs-12">
       <div class="col-xs-12"> 
     <h2 id="AboutMeHeading"><strong>
     About Me</strong>
       </h2>
-          
       </div>
         <div id="personalDescription" class="col-xs-12 col-sm-6">
-          <p>I have a BSc. in Computer Science. My background is in Java, C and C++. I'm experienced with basic to advanced programming principles/paradigms (Object Oriented/ Functional/ Optimization). As a future Software Developer, I aim to satisfy and exceed the expectations of prospective clients. I communicate clearly and effectively with others, take initiative when needed and look for creative solutions if possible. I strive to raise the synergy of the team I am embedded in by enabling others to perform better; this is done by being critical, yet supportive. I am rarely satisfied with meeting basic expectations, and believe proper results are achieved through tireless work and continued evaluation of a given task. </p>
+          <p>I have a BSc. in Computer Science. My background is in Java and C++. I'm experienced with basic to advanced programming principles/paradigms (Object Oriented/ Functional/ Optimization). As a Software Developer, I aim to always exceed the expectations of clients. I communicate clearly and effectively with others, take initiative when needed and look for creative solutions if possible. I strive to raise the synergy of the team I am embedded in by enabling members to perform better; this is done by being critical, yet supportive. I am rarely satisfied with meeting basic expectations, and believe good results are achieved with dedication and a positive attitude. </p>
       </div>
         <div id="portfolioImageContainer" class="col-xs-12 col-sm-6">
           <div class="thumbnail" id="portfolioImage">
@@ -63,9 +67,11 @@
  <!--Portfolio Section-->
   <div id="Portfolio" class="row">
     <div class="col-xs-12">
+         <div class="col-xs-12"> 
       <h2 id="PortfolioHeading"><strong>
 Portfolio</strong>
     </h2>
+         </div>
       <div class="row">
         <div class="col-lg-4 col-md-6 col-xs-12">
           <div class="thumbnail" id="portfolioElement">
@@ -109,9 +115,11 @@ Portfolio</strong>
   <!-- Contact me section -->
   <div id="Contact" class="row">
     <div class="col-xs-12">
+         <div class="col-xs-12"> 
       <h2 id="ContactHeading"><strong>
     Contact</strong>
         </h2>
+         </div>
       <div class="col-xs-12">
         <form class="well form-horizontal" action=" " method="post" id="contact_form">
           <fieldset>
@@ -156,12 +164,12 @@ Portfolio</strong>
   <!-- Footer -->
   <div id="footer" class="row">
     <div class="col-xs-12">
-      <div class="col-xs-6 ">
-        <p id="Author">
-        Designed by Vishnu Govindaraj.
+      <div class="col-xs-6">
+        <p id="author">
+        &copy; Vishnu Govindaraj. All rights reserved.
          </p>
       </div>
-      <div class="col-xs-6">
+      <div class="social">
         <ul>
           <li><a href="https://www.facebook.com/vishnu.govindaraj.33" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
           <li><a href="https://www.linkedin.com/in/vishnu-govindaraj-610a3331" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>

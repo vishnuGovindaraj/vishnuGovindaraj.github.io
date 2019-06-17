@@ -1,24 +1,69 @@
-body{
-  margin:0;
-  padding:0;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 15px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    font-size: 16px;
 }
+
 .container {
-  position: relative;
-  width: 100%; 
-  margin: 0 auto;
-  padding: 0;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 600%;
+        line-height: 1.2em;
+        padding-top: 200px;
+    }
+    #HeroHeading {
+        font-size: 250%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 400%;
+        line-height: 1.2em;
+        padding-top: 200px;
+    }
+    #HeroHeading {
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 275%;
+        line-height: 1.2em;
+        padding-top: 200px;
+    }
+    #HeroHeading {
+        font-size: 150%;
+    }
+}
+
+h5 {
+    margin-top: 15px;
 }
 
 ul.topnav {
+    width: 100%;
     list-style-type: none;
-    margin: 0 0;
     overflow: hidden;
-    /*background-color: #373737;*/
+    margin: auto;
 }
-ul.topnav li {float: right;}
-ul.topnav li.icon {display: none;}
+
+ul.topnav li {
+    display: inline-block;
+}
+
+ul.topnav li.icon {
+    display: none;
+}
+
 ul.topnav li a {
     display: inline-block;
     color: #dcd0c0;
@@ -26,48 +71,55 @@ ul.topnav li a {
     padding: 25px 10px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 18px;
+    font-size: 120%;
 }
-ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li a:hover {
+    background-color: #555;
+}
+
 @media screen and (max-width:680px) {
-  ul.topnav li {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
+    ul.topnav li {
+        display: none;
+    }
+    ul.topnav li.icon {
+        float: right;
+        display: inline-block;
+    }
 }
+
 @media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float:none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-
-    display: block;
-    text-align: center;
-  }
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: center;
+    }
 }
 
-#personalDescription p{
-  font-size: 20px;
-  padding-top: 50px;
-  margin: 3% 0%;
+#personalDescription p {
+    font-size: 150%;
+    padding-top: 50px;
+    margin: 3% 0%;
 }
 
-#portfolioImageContainer .thumbnail{
-  position:relative;
-  max-width: 300px;
-  margin: 4% auto;
-
+#portfolioImageContainer .thumbnail {
+    position: relative;
+    max-width: 250px;
+    margin: 4% auto;
 }
 
-.button{
+.button {
     overflow: auto;
     background-color: #373737;
     border: none;
@@ -76,149 +128,121 @@ ul.topnav li a:hover {background-color: #555;}
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 22px;
+    font-size: 150%;
     cursor: pointer;
 }
-h1{
-  color: #dcd0c0;
-  font-size: 5.5em;
-  line-height: 1em;
-  padding-top: 200px;
-}
+
 a.notunderlinelink {
-  color: #dcd0c0;
-  text-decoration: none;
-}
-#HeroImage{
-    		position: relative;
-		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url("https://upload.wikimedia.org/wikipedia/commons/f/f3/Calgary_At_Night.JPG");
-		background-size: cover;
-		background-position: center center;
-		background-attachment: fixed;
-		color: #dcd0c0;
-		padding: 0 0 0 0;
-		cursor: default;
-                height: 100vh;
-		min-height: 40em;
-                text-align: center;
-                line-height: 90%;
-		line-height: 1.25em;
-                margin: 0px 0px 0px 0px;
-}
-#AboutMe{
-
-  text-align: center;
-  margin: 0px 0px 0px 0px;
-  height:auto;
-  min-height: 600px;
-  background-color: #f4f4f4;
+    color: #dcd0c0;
+    text-decoration: none;
 }
 
-#Portfolio{
+#HeroImage {
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../images/image1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #dcd0c0;
+    padding: 0 0 0 0;
+    cursor: default;
+    height: 100vh;
+    min-height: 40em;
+    text-align: center;
+    line-height: 90%;
+    line-height: 1.25em;
+    margin: 0px 0px 0px 0px;
+}
 
-  text-align: center;
-  margin: 0px 0px 0px 1px;
-  height:auto;
-  min-height: 600px;
-  background-color:#373737 ;
-  color: #dcd0c0;
-}
-#portfolioElement{
-  display: inline-block;
-  max-width: 500px;
-  margin: 3% 2%;
+#HeroImage ul li a {
+    font-size: 150%;
 }
 
-#Contact{
-  text-align: center;
-   margin: 0px 0px 0px 1px;
-  height:auto;
-  background-color: #f4f4f4;
+#HeroImage ul li {
+    margin: 0 30px 0 30px;
 }
-#footer{
-  position: static;
-  margin: 0px 0px 0px 1px;
-  padding: 1% 0;
-  height:auto;
-  min-height:75px;
-  background-color: #373737;
-  color: #dcd0c0;
+
+#AboutMe {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    height: auto;
+    min-height: 600px;
+    background-color: #f4f4f4;
 }
-h5{
-  margin-top:15px;
+
+#Portfolio {
+    text-align: center;
+    margin: 0px 0px 0px 1px;
+    height: auto;
+    min-height: 600px;
+    background-color: #373737;
+    color: #dcd0c0;
 }
-.social{
-  vertical-align: middle;
+
+#portfolioElement {
+    display: inline-block;
+    max-width: 500px;
+    margin: 3% 2%;
 }
-.social ul {
-  list-style-type:none;
+
+#Contact {
+    text-align: center;
+    margin: 0px 0px 0px 1px;
+    height: auto;
+    background-color: #f4f4f4;
 }
+
+#footer {
+    margin: 0px 0px 0px 1px;
+    padding: 1% 0;
+    background-color: #373737;
+    color: #dcd0c0;
+    text-align: center;
+}
+
+.social {
+    display: block;
+    text-align: center;
+    margin-right: 30px;
+}
+
 .social ul li {
-   float: right;
+    display: inline;
+    list-style-type: none;
 }
 
-.social ul li a i { 
-	background: #205D7A;
-	color: #fff;
-	width: 40px;
-	height: 40px;
-	border-radius: 20px;
-	font-size: 22px;
-	text-align: center;
-	margin-right: 10px;
-        padding-top: 20%;
-  transition: all 0.3s ease-in-out;
+.social ul li a i {
+    color: #dcd0c0;
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 10px 10px 0;
 }
 
-.social .fa-github {
-  background:white;
-  color:black;
-  font-size: 30px;
-  padding-top: 10%;
+#count {
+    text-align: left;
+    white-space: nowrap;
 }
-.social .fa-google-plus {
-	background:#dd4b39;
-}
-.social .fa-facebook {
-	background:#3b5998;
-} 
-.social .fa-twitter {
-	background:#00aced;
-}
-.social .fa-linkedin {
-    background:#007bb6;
-}
-.social .fa-free-code-camp {
-      font-size: 30px;
-  padding-top: 10%;
-    background:darkgreen;
-}
-
 
 .social .fa-facebook:hover {
-	background:white;
-  color:#3b5998
-} 
+    color: #3b5998
+}
+
 .social .fa-linkedin:hover {
-	background:white;
-    color:#007bb6
+    color: #007bb6
 }
+
 .social .fa-twitter:hover {
-	background:white;
-  color:#00aced
+    color: #00aced
 }
-.social .fa-google-plus:hover {
-	background:white;
-  color:#dd4b39
-}
+
 .social .fa-github:hover {
-	background:black;
-  color:white
+    color: black;
 }
+
 .social .fa-free-code-camp:hover {
-    background:white;
-	color:darkgreen;
+    color: darkgreen;
 }
-.input-group{
-    z-index: 0;
+
+.social .fa-google-plus:hover {
+    color: #dd4b39;
 }
